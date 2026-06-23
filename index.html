@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Sayang! 🎂</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Halaman Utama -->
+    <div class="main-container">
+        <h1 class="title">Hai, Cantik... ✨</h1>
+        <p class="subtitle">Ada sesuatu yang spesial buat kamu hari ini.</p>
+        <button id="openBtn" class="btn">Buka Pesannya 💌</button>
+    </div>
+    <!-- Kotak Pop Up -->
+    <div id="popupOverlay" class="overlay">
+        <div class="popup-content">
+            <button id="closeBtn" class="close-btn">&times;</button>           
+            <!-- HALAMAN 1: Ucapan -->
+            <div class="popup-page active" id="page1">
+                <h2 class="popup-title">Happy Birthday! 🎉</h2>
+                <div class="image-placeholder">
+                    <img src="https://i.pinimg.com/originals/a0/0a/61/a00a614d9b4db7d5940e2d75a6c3f3ab.gif" alt="Cute Hug">
+                </div>
+                <p class="popup-text">
+                    Selamat bertambah usia, ya! Terima kasih udah selalu jadi alasan aku tersenyum setiap hari. 
+                    Semoga di umur yang baru ini, kamu makin bahagia, sehat selalu, dan semua yang kamu impikan satu per satu bisa terwujud.
+                </p>
+                <button class="btn btn-nav next-btn">Lanjut Baca 👉</button>
+            </div>
+            <!-- HALAMAN 2: Video -->
+            <div class="popup-page" id="page2">
+                <h2 class="popup-title">Our Memories 🎬</h2>
+                <div class="video-container">
+                    <!-- Ganti "video-kita.mp4" dengan nama file video kamu atau URL video -->
+                    <video controls>
+                        <source src="https://www.image2url.com/r2/default/videos/1782206677090-502fd05e-e77f-4289-ae3d-2b89b71fd37d.mp4" type="video/mp4">
+                        Browser kamu tidak mendukung video atau file tidak ditemukan.
+                    </video>
+                </div>
+                <p class="popup-text">Coba inget-inget deh momen ini hihi...</p>
+                <div class="nav-buttons">
+                    <button class="btn btn-nav prev-btn">👈 Kembali</button>
+                    <button class="btn btn-nav next-btn">Lanjut 👉</button>
+                </div>
+            </div>
+            <!-- HALAMAN 3: Galeri 9 Foto -->
+            <div class="popup-page" id="page3">
+                <h2 class="popup-title">You & Me 📸</h2>
+                <div class="gallery">
+                    <!-- Ganti dengan path foto kamu (misal: images/foto1.jpg, images/foto2.jpg, dst) -->
+                    <img src="https://img.sanishtech.com/u/46a5fe923b9410084b8e22706c84533b.jpg" 
+                    alt="Foto 1">
+                    <img src="https://img.sanishtech.com/u/06c7cb5bdff23c9e86d29fb173362bf2.jpg" 
+                    alt="Foto 2">
+                    <img src="https://img.sanishtech.com/u/167c00ce0108b726a9db26576eae63b0.jpg" 
+                    alt="Foto 3">
+                    <img src="https://img.sanishtech.com/u/d9c716f01d4095adddf1bbdb032aa12f.jpg" 
+                    alt="Foto 4">
+                    <img src="https://img.sanishtech.com/u/f172237fdff4d36aecb044a5fbdf686c.jpg" 
+                    alt="Foto 5">
+                    <img src="https://img.sanishtech.com/u/9d859ece9dc0c57257939612282baf94.jpg" 
+                    alt="Foto 6">
+                    <img src="https://img.sanishtech.com/u/31d61946d64a0f1ad50b4c29b4599c04.jpg" 
+                    alt="Foto 7">
+                    <img src="https://img.sanishtech.com/u/ca4aa049eea03e615d482741a4f12229.jpg" 
+                    alt="Foto 8">
+                    <img src="https://img.sanishtech.com/u/360cc44c1abf7959f9539dbb63c3daa0.jpg" 
+                    alt="Foto 9">
+                </div>
+                <div class="nav-buttons">
+                    <button class="btn btn-nav prev-btn">👈 Kembali</button>
+                    <button class="btn btn-nav next-btn">Terakhir 👉</button>
+                </div>
+            </div>
+            <!-- HALAMAN 4: Ucapan Penutup -->
+            <div class="popup-page" id="page4">
+                <h2 class="popup-title">Satu Lagi... ✨</h2>
+                <div class="image-placeholder">
+                    <img src="https://i.pinimg.com/originals/db/bb/a5/dbbba5c8be007be77bd0e6cce2bc3326.gif" alt="Cute Love">
+                </div>
+                <p class="popup-text highlight">
+                    makasih yaa sayang karena udah mau bertahan selama ini, makasih jugaa udah mau baca suratnya. i love u more sayangg ❤️
+                </p>
+                <div class="nav-buttons">
+                    <button class="btn btn-nav prev-btn">👈 Kembali</button>
+                    <button id="loveBtn" class="btn btn-love">Pencet Ini Coba! ✨</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
